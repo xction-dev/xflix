@@ -1,6 +1,6 @@
 ---
 name: Question
-about: 스터디에 관한 질문을 올립니다
+about: 개발에 관한 질문을 올립니다
 title: "[QUESTION]"
 labels: help wanted, question
 assignees: ''
@@ -8,10 +8,9 @@ assignees: ''
 ---
 
 ## 요약
-- 챕터: chapter/[number]/[name]
-- 종류: 사실 확인 / 간단한 설명 / 자세한 설명 / 예시 필요
+- 분야: FE / BE / DevOps / 기타
 - 키워드: 
-- 질문 요약
+- 질문 요약:
 
 ## 질문 내용
 
