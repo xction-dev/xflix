@@ -9,13 +9,13 @@
 
 # 체크리스트
 ### PR 달 때
-[] Enhancement나 Fix 라벨을 달았나요?
-[] Review를 요청했나요?
-[] `yarn build`로 테스트를 했나요?
+- [ ] Enhancement나 Fix 라벨을 달았나요?
+- [ ] Review를 요청했나요?
+- [ ] `yarn build`로 테스트를 했나요?
 
 ### 머지하기 전에
-[] 리뷰 코멘트를 모두 해결했나요?
-[] squash merge 임을 확인했나요?
+- [ ] 리뷰 코멘트를 모두 해결했나요?
+- [ ] squash merge 임을 확인했나요?
 
 
 # 작업 내용
