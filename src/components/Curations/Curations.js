@@ -14,14 +14,14 @@ export default function Curations() {
                                 content.type == "youtube" ? // content.type이 youtube이면 play/${id}로 라우팅, writing이면 url 이동
                                     <Link href={'/play/' + content.id} style={{ textDecoration: "none", color: "black"}}>
                                         <div className="content-card clickable">
-                                                {/* <Image src={content.thumbnail} alt="thumbnail" fill="true"/> */}
+                                                <img className="content-img" src={content.thumbnail} alt="thumbnail"/>
                                                 <h5 className="content-title">{content.title}</h5>
                                         </div>
                                     </Link>   
                                     :
                                     <Link href={content.url} style={{ textDecoration: "none", color: "black"}}>
                                         <div className="content-card clickable">
-                                                {/* <Image src={content.thumbnail} alt="thumbnail" fill="true"/> */}
+                                                <img className="content-img" src={content.thumbnail} alt="thumbnail"/>
                                                 <h5 className="content-title">{content.title}</h5>
                                         </div>
                                     </Link>   

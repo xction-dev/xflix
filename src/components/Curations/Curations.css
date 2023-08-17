@@ -36,10 +36,20 @@
     margin-right: 20px;
     background-color: #d9d9d9;
     flex: none;
+    overflow: hidden;
+}
+
+.content-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .content-title {
+    position: absolute;
     margin: 5px;
+    color: white; /* 텍스트 색상을 투명으로 설정 */
+    text-shadow: 2px 2px 4px black; /* 아웃라인 효과 */
 }
 
 .contents-box {
