@@ -6,9 +6,7 @@ export default function Dashboard() {
     return (
         <div>
             <Header />
-            <div className="dashboard-container">
-                <Curations />
-            </div>
+            <Curations />
         </div>
     )
 }

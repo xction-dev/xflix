@@ -1,3 +1,7 @@
+.dashboard-container {
+    margin: 0 0 0 40px;
+}
+
 .curation-box {
     display: flex;
     flex-direction: column;
@@ -30,7 +34,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     margin-right: 20px;
-    background-color: lightgrey;
+    background-color: #d9d9d9;
     flex: none;
 }
 

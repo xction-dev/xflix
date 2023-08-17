@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Curations() {
     return (
-        <div>
+        <div className="dashboard-container">
             {curationsData.map((curation) => (
                 <div className="curation-box" key={curation.id}>
                     <h3 className="curation-title">{curation.title}</h3>
