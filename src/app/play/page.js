@@ -1,7 +1,9 @@
+import Player from '.../components/Play/Player/Player.js'
+
 export default function Play(){
     return(
         <div>
-            <h1>제발 보여라</h1>
+            <Player></Player>
         </div>
     )
 }
