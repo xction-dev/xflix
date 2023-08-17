@@ -1,0 +1,51 @@
+.curation-box {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    margin-bottom: 30px;
+}
+
+.curation-title {
+    /* border: 1px solid blue; */
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.contents-box {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.content-card {
+    width: 200px;
+    height: 120px;
+    /* border: 1px solid purple; */
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 20px;
+    background-color: lightgrey;
+    flex: none;
+}
+
+.content-title {
+    margin: 5px;
+}
+
+.contents-box {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.contents-box::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+.clickable {
+    cursor: pointer;
+}
