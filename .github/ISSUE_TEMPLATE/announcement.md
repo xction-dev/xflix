@@ -1,6 +1,6 @@
 ---
 name: Announcement
-about: 개발에 관한 질문을 올립니다
+about: 개발 시 참고할 정보와 공지들
 title: "[ANNOUNCEMENT]"
 labels: announcement
 assignees: ''
