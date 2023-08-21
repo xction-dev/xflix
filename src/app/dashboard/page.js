@@ -4,10 +4,10 @@ import Curations from "@/components/Curations/Curations"
 export default function Dashboard() {
 
     return (
-        <div>
+        <>
             <Header />
             <Curations />
-        </div>
+        </>
     )
 }
 
