@@ -7,6 +7,8 @@
 .logo {
     font-weight: 800;
     font-size: 30px;
+    text-decoration: none;
+    color: blue;
 }
 
 .login-btn {
@@ -17,4 +19,7 @@
     border: 0;
     border-radius: 20px;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
 }
