@@ -1,19 +1,10 @@
-'use client';
-
 import styles from './PWInput.css'
-import React, { useState } from 'react'
 
-export default function PWInput() {
-    const [ inputValue, setInputValue ] = useState('')
-
-    const handleInputChange = ((event) => {
-        setInputValue(event.target.value);
-    })
-
+export default function PWInput({ inputValue, setInputValue }) {
     return (
         <div>
             <h5 className="pw-txt">비밀번호</h5>
-            <input className="pw-input" type="password" value={inputValue} onChange={handleInputChange}/>
+            <input className="pw-input" type="password" value={inputValue} onChange={(e)=>{setInputValue(e.target.value)}}/>
         </div>
     )
 }
