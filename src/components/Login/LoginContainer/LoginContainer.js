@@ -11,9 +11,6 @@ export default function LoginContainer() {
     const [ IDInputValue, setIDInputValue ] = useState('')
     const [ PWInputValue, setPWInputValue ] = useState('')
 
-    console.log(IDInputValue)
-    console.log(PWInputValue)
-
     return (
         <div className="login-container">
             <h2 className="login-txt">로그인</h2>
