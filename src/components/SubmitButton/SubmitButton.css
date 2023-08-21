@@ -8,6 +8,9 @@
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
 }
 
 .submit-btn:hover {
