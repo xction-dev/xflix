@@ -1,4 +1,4 @@
-import styles from './DashboardContainer.css'
+import './DashboardContainer.css'
 import curationsData from '/src/mock/curations.json'
 import Carousel from '../Carousel/Carousel'
 

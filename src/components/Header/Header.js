@@ -1,4 +1,4 @@
-import styles from './Header.css'
+import './Header.css'
 import Image from 'next/image'
 import Link from 'next/link'
 

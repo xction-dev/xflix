@@ -1,4 +1,4 @@
-import styles from './Carousel.css'
+import './Carousel.css'
 import ContentCard from '../ContentCard/ContentCard'
 
 

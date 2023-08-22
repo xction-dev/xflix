@@ -1,4 +1,4 @@
-import styles from './PWInput.css'
+import './PWInput.css'
 
 export default function PWInput({ inputValue, setInputValue }) {
     return (

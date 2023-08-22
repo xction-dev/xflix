@@ -1,4 +1,4 @@
-import styles from './IDInput.css'
+import './IDInput.css'
 
 export default function IDInput({ inputValue, setInputValue }) {
     return (

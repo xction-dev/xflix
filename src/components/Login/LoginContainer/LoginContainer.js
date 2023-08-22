@@ -3,7 +3,7 @@
 import IDInput from '../IDInput/IDInput'
 import PWInput from '../PWInput/PWInput'
 import SubmitButton from '../../SubmitButton/SubmitButton'
-import styles from './LoginContainer.css'
+import './LoginContainer.css'
 
 import React, { useState } from 'react'
 

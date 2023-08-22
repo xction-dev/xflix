@@ -1,4 +1,4 @@
-import styles from './ContentCard.css'
+import './ContentCard.css'
 import Link from 'next/link'
 import { isPlayable } from '@/utils/isPlayable'
 

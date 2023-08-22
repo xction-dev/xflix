@@ -1,4 +1,4 @@
-import styles from './SubmitButton.css'
+import './SubmitButton.css'
 import Link from 'next/link'
 
 export default function SubmitButton() {
