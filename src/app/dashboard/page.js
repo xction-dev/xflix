@@ -1,12 +1,12 @@
 import Header from "@/components/Header/Header"
-import Curations from "@/components/Curations/Curations"
+import DashboardContainer from "@/components/Curations/DashboardContainer/DashboardContainer"
 
 export default function Dashboard() {
 
     return (
         <>
             <Header />
-            <Curations />
+            <DashboardContainer />
         </>
     )
 }
