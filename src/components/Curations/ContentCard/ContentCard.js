@@ -7,7 +7,7 @@ export default function ContentCard({ content }) {
     const contentLink = isPlayable(content) ? '/play/' + content.id : content.url
 
     return (
-        <Link href={contentLink} style={{ textDecoration: "none", color: "black"}} key={content.id}>
+        <Link href={contentLink} style={{ textDecoration: "none", color: "black"}}>
             <div className="content-card clickable">
                     <img className="content-img" src={content.thumbnail} alt="thumbnail"/>
                     <h5 className="content-title">{content.title}</h5>
