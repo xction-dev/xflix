@@ -1,0 +1,25 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px 60px 40px;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 30px;
+    text-decoration: none;
+    color: blue;
+}
+
+.login-btn {
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #555555;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+}
