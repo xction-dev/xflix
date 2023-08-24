@@ -6,8 +6,8 @@ export default function Play(props){
     
     return(
         <div>
-            <Player id={contentId}></Player>
-            <Comments></Comments>
+            <Player id={contentId} />
+            <Comments />
         </div>
     )
 }

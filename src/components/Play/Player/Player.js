@@ -1,4 +1,5 @@
 import contentsData from 'src/mock/contents.json'
+import './Player.css'
 
 export default function Player(props){
     let id = props.id;
@@ -11,8 +12,8 @@ export default function Player(props){
     }
 
     return(
-        <div>
-            <iframe width="1134" height="638" src={content.url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        <div className="video-container">
+            <iframe className="youtube" width="1134" height="638" src={content.url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             <h2>{content.title}</h2>
         </div>
     )
