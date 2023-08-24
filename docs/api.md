@@ -62,6 +62,7 @@ __GET__ `/api/curations`
   type Curation = {
     id: number;
     title: string;
-    query: Partial<Content>
-    comments?: Comment[] // type === "youtube"일 때
+    query: Partial<Content>;
+    contents: Content[];
   };
+  ```
