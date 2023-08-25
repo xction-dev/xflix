@@ -1,15 +1,15 @@
 .dashboard-container {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .curation-container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .curation-title {
-    margin: 0;
-    margin-bottom: 5px;
-    padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
 }

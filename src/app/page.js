@@ -1,7 +1,3 @@
 export default function Home() {
-  return (
-    <>
-      Home Page
-    </>
-  )
+  return <>Home Page</>;
 }

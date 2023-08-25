@@ -1,12 +1,11 @@
-import Header from "@/components/Header/Header"
-import DashboardContainer from "@/components/Curations/DashboardContainer/DashboardContainer"
+import Header from "@/components/Header/Header";
+import DashboardContainer from "@/components/Curations/DashboardContainer/DashboardContainer";
 
 export default function Dashboard() {
-    
-    return (
-        <>
-            <Header />
-            <DashboardContainer />
-        </>
-    )
+  return (
+    <>
+      <Header />
+      <DashboardContainer />
+    </>
+  );
 }
