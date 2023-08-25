@@ -5,8 +5,7 @@ import Carousel from "../Carousel/Carousel";
 import { useState, useEffect } from "react";
 
 export default function DashboardContainer() {
-  const [curationsData, setCurationsData] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [curationsData, setCurationsData] = useState(null);
 
   useEffect(() => {
     const apiUrl = "/api/curations"; // 서버 API 엔드포인트 URL
@@ -15,11 +14,9 @@ export default function DashboardContainer() {
       .then((response) => response.json())
       .then((data) => {
         setCurationsData(data.items); // data 객체 안에 items가 array로 있어서, 이를 curationsData로 받아옴.
-        setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
-        setLoading(false);
       });
   }, []);
 
@@ -27,7 +24,7 @@ export default function DashboardContainer() {
 
   return (
     <div className="dashboard-container">
-      {loading ? (
+      {curationsData === null ? (
         <p>Loading...</p>
       ) : (
         curationsData.map((curation) => (
