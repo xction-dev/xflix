@@ -2,7 +2,7 @@
 
 import "./DashboardContainer.css";
 import Carousel from "../Carousel/Carousel";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function DashboardContainer() {
   const [curationsData, setCurationsData] = useState([]);
