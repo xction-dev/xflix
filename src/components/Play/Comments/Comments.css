@@ -1,31 +1,30 @@
-.comment-input{
-    border: none;
-    outline: none; /* 포커스 시에 나타나는 테두리 제거 */
-    border-bottom: 1px solid gray; /* 밑줄 스타일 적용 */
-    font-size: 28;
-    color: gray;
+.comment-input {
+  border: none;
+  outline: none; /* 포커스 시에 나타나는 테두리 제거 */
+  border-bottom: 1px solid gray; /* 밑줄 스타일 적용 */
+  font-size: 28;
+  color: gray;
 }
 
 .comment-container {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 1135px; /* 상자의 너비 조정 */
-    height: 100px; /* 상자의 높이 조정 */
-    background-color: white; /* 배경색상 설정 */
-    border-radius: 15px; /* 모서리 둥글게 설정 */
-    border-color: gray;
-    border: 1px solid gray;
-    margin-top: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 1135px; /* 상자의 너비 조정 */
+  height: 100px; /* 상자의 높이 조정 */
+  background-color: white; /* 배경색상 설정 */
+  border-radius: 15px; /* 모서리 둥글게 설정 */
+  border-color: gray;
+  border: 1px solid gray;
+  margin-top: 20px;
 }
 
 .comment-text {
-    color: gray;
-    font-size: 28;
-    margin-left: 30px;
-    
+  color: gray;
+  font-size: 28;
+  margin-left: 30px;
 }
 
 .comment-number {
-    font-size: 32;
+  font-size: 32;
 }
