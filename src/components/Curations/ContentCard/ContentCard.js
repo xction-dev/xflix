@@ -1,6 +1,6 @@
 import './ContentCard.css'
 import Link from 'next/link'
-import { isPlayable } from '@/utils/isPlayable'
+import { isPlayable } from '@/utils-client/isPlayable'
 
 export default function ContentCard({ content }) {
     // content.type이 youtube이면 play/${id}로 라우팅, writing이면 url 이동
