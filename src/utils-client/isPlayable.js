@@ -1,3 +1,3 @@
 export function isPlayable(content) {
-    return content.type === "youtube";
+  return content.type === "youtube";
 }

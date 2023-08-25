@@ -1,18 +1,18 @@
 .submit-btn {
-    width: 70px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: #515151;
-    color: white;
-    border: 0;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    line-height: 40px;
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #515151;
+  color: white;
+  border: 0;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
 }
 
 .submit-btn:hover {
-    background-color: #aaaaaa;
+  background-color: #aaaaaa;
 }
