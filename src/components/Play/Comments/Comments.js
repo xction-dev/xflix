@@ -1,10 +1,23 @@
-import contents from 'src/mock/contents.json'
+'use client'
 
-export default function Comments(){
+import contentsData from 'src/mock/contents.json'
+import { useState } from "react"
+import "./Comments.css"
+
+export default function Comments(props){
+    var commentsId = props.commentsId;
+    var content = contentsData[commentsId];
+    
+
+    var [comment, setComment] = useState('')
+
     return(
         <div>
-            <p>댓글기능 추가할게요..</p>
-            <input placeholder="댓글을 입력하세요"></input>
+            <p className="comment-number">댓글 {content.comments.length}개</p>
+            <input className="comment-input" placeholder="댓글을 입력하세요" onChange={(e)=>{ setComment(e.target.value) }}></input>
+            <div className="comment-container">
+                <p className="comment-text">{content.comments[0].text}</p> 
+            </div>
         </div>
     )
 }

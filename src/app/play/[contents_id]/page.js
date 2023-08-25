@@ -1,13 +1,13 @@
-import Player from 'src/components/Play/Player/Player.js'
-import Comments from 'src/components/Play/Comments/Comments.js'
+import PlayContainer from 'src/components/Play/PlayContainer/PlayContainer.js'
 
 export default function Play(props){
-    let contentId = props.params.contents_id;
+    var contentId = props.params.contents_id;
     
     return(
         <div>
-            <Player id={contentId} />
-            <Comments />
+            <PlayContainer id={contentId}/>
+            {/* <Player id={contentId} />
+            <Comments id={contentId}/> */}
         </div>
     )
 }
