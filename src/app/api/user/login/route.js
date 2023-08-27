@@ -15,6 +15,7 @@ export async function POST(request) {
   if (missingKeys.length > 0) {
     return NextResponse.json(
       {
+        code: 0,
         message: `Missing keys: ${missingKeys.join(", ")}`,
       },
       { status: 400 },
@@ -35,6 +36,7 @@ export async function POST(request) {
   if (!findResult) {
     return NextResponse.json(
       {
+        code: 12,
         message: "Username or password is wrong",
       },
       { status: 400 },

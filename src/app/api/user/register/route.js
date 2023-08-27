@@ -16,7 +16,8 @@ export async function POST(request) {
   if (missingKeys.length > 0) {
     return NextResponse.json(
       {
-        message: `Missing keys: ${missingKeys.join(", ")}`,
+        code: 0,
+        message: `Missing keys in request: ${missingKeys.join(", ")}`,
       },
       { status: 400 },
     );
@@ -38,6 +39,7 @@ export async function POST(request) {
   if (userWithSameUsername) {
     return NextResponse.json(
       {
+        code: 10,
         message: "Username already exists",
       },
       { status: 400 },
@@ -63,6 +65,7 @@ export async function POST(request) {
   if (insertResult.insertedCount !== 1) {
     return NextResponse.json(
       {
+        code: 11,
         message: "Failed to insert user",
       },
       { status: 500 },
