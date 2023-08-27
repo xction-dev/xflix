@@ -1,10 +1,10 @@
-on: 
+on:
   push:
     branches:
       - static
 
 jobs:
-  build: 
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,10 +16,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-       - name: Upload to S3
-        run:
-          aws s3 cp ./out s3://$AWS_S3_BUCKET --acl public-read
-         --delete --exclude '.git/*'
+      - name: Upload to S3
+        run: aws s3 cp ./out s3://$AWS_S3_BUCKET --acl public-read --delete --exclude '.git/*'
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
