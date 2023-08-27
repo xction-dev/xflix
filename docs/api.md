@@ -1,15 +1,18 @@
 # API 문서
+
 > 별도의 API Docs 도입 이전에 임시로 사용하는 문서입니다
 
 ## 목차
+
 - [ping](#ping)
 - [contents](#contents)
 - [curations](#curations)
-
-
+- [users](#users)
 
 ## ping
-__GET__ `/api/ping`
+
+**GET** `/api/ping`
+
 - response
   ```JSON
   {
@@ -18,7 +21,9 @@ __GET__ `/api/ping`
   ```
 
 ## Contents
-__GET__ `/api/contents`
+
+**GET** `/api/contents`
+
 - response
   ```JSON
   {
@@ -26,12 +31,13 @@ __GET__ `/api/contents`
   }
   ```
 - type
+
   ```typescript
   type Content = {
     id: number;
-    type: "writing" | "youtube"
+    type: "writing" | "youtube";
     title: string;
-    comments?: Comment[] // type === "youtube"일 때
+    comments?: Comment[]; // type === "youtube"일 때
   };
 
   type Comment = {
@@ -40,17 +46,18 @@ __GET__ `/api/contents`
   };
   ```
 
+**GET** `/api/content/:content_id`
 
-__GET__ `/api/content/:content_id`
 - response
   ```JSON
   Content
   ```
-
-
+- custom error: `20`
 
 ## Curations
-__GET__ `/api/curations`
+
+**GET** `/api/curations`
+
 - response
   ```JSON
   {
@@ -66,3 +73,42 @@ __GET__ `/api/curations`
     contents: Content[];
   };
   ```
+
+## Users
+
+**POST** `/api/users/register`
+
+- request
+  ```JSON
+  {
+    name: string; // 이름
+    username: string; // 아이디. 중복 시 에러가 발생합니다
+    password: string; // 비밀번호
+  }
+  ```
+- response
+  ```JSON
+  {
+    isRegisterSuccess: true,
+    name: string;
+  }
+  ```
+- custom error: `0`, `10`, `11`
+
+**POST** `/api/users/login`
+
+- request
+  ```JSON
+  {
+    username: string;
+    password: string;
+  }
+  ```
+- response
+  ```JSON
+  {
+    isLoginSuccess: true,
+    name: string;
+  }
+  ```
+- custom error: `0`, `12`
