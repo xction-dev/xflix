@@ -1,8 +1,10 @@
 import { getDB } from "@/utils-server/db";
 import { NextResponse } from "next/server";
 
-export async function GET(req, { params }){
+export async function GET(req, { params }) {
   const db = await getDB();
-  const item = await db.collection("content").findOne({ id: params.content_id });
+  const item = await db
+    .collection("content")
+    .findOne({ id: params.content_id });
   return NextResponse.json(item);
 }
