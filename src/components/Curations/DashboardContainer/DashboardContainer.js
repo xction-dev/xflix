@@ -20,8 +20,6 @@ export default function DashboardContainer() {
       });
   }, []);
 
-  console.log(curationsData);
-
   return (
     <div className="dashboard-container">
       {curationsData === null ? (
