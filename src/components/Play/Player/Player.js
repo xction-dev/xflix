@@ -3,12 +3,7 @@ import "./Player.css";
 
 export default function Player(props) {
   var playerId = props.playerId;
-  var content = contentsData[playerId];
-
-  if (content.type != "youtube") {
-    //이 로직이 아닌 것 같은데.. 일단 써봄
-    return <div></div>;
-  }
+  var video = contentsData[playerId];
 
   return (
     <div className="video-container">
@@ -16,13 +11,13 @@ export default function Player(props) {
         className="youtube"
         width="1134"
         height="638"
-        src={content.url}
+        src={video.url}
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       ></iframe>
-      <h2>{content.title}</h2>
+      <h2>{video.title}</h2>
     </div>
   );
 }

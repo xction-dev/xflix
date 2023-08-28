@@ -6,8 +6,6 @@ export default function Play(props) {
   return (
     <div>
       <PlayContainer id={contentId} />
-      {/* <Player id={contentId} />
-            <Comments id={contentId}/> */}
     </div>
   );
 }
