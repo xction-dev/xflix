@@ -16,7 +16,7 @@ export default function LoginContainer() {
       <h2 className="login-txt">로그인</h2>
       <IDInput inputValue={IDInputValue} setInputValue={setIDInputValue} />
       <PWInput inputValue={PWInputValue} setInputValue={setPWInputValue} />
-      <SubmitButton />
+      <SubmitButton status="submit" />
     </div>
   );
 }

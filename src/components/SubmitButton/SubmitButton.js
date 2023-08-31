@@ -1,10 +1,10 @@
 import "./SubmitButton.css";
 import Link from "next/link";
 
-export default function SubmitButton() {
+export default function SubmitButton(status) {
   return (
     <Link href="/dashboard" className="submit-btn">
-      확인
+      {status === "submit" ? "확인" : "가입"}
     </Link>
   );
 }
