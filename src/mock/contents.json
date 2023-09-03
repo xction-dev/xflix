@@ -3,49 +3,48 @@
     "id": 0,
     "type": "writing",
     "title": "React 렌더링 가이드",
-    "url":"https://velog.io/@superlipbalm/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior",
-    "thumbnail":"https://repository-images.githubusercontent.com/37153337/9d0a6780-394a-11eb-9fd1-6296a684b124"
+    "url": "https://velog.io/@superlipbalm/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior",
+    "thumbnail": "https://repository-images.githubusercontent.com/37153337/9d0a6780-394a-11eb-9fd1-6296a684b124"
   },
   {
     "id": 1,
     "type": "youtube",
     "title": "자바스크립트 Promise",
-    "url":"https://www.youtube.com/embed/Sn0ublt7CWM",
-    "thumbnail":"https://images.velog.io/images/seohee0112/post/7bfe1164-eb92-41be-a32d-5f46b822e224/image.png",
+    "url": "https://www.youtube.com/embed/Sn0ublt7CWM",
+    "thumbnail": "https://images.velog.io/images/seohee0112/post/7bfe1164-eb92-41be-a32d-5f46b822e224/image.png",
     "comments": [
       {
-        "id":0,
-        "text":"좋은 영상이네요!"
+        "id": 0,
+        "text": "좋은 영상이네요!"
       }
     ]
   },
-   {
+  {
     "id": 2,
     "type": "writing",
     "title": "객체지향 자바스크립트",
-    "url":"https://yozm.wishket.com/magazine/detail/1396/",
-    "thumbnail":"https://i.ytimg.com/vi/GEuS0tfLfEY/maxresdefault.jpg"
-  }, 
+    "url": "https://yozm.wishket.com/magazine/detail/1396/",
+    "thumbnail": "https://i.ytimg.com/vi/GEuS0tfLfEY/maxresdefault.jpg"
+  },
   {
     "id": 3,
     "type": "youtube",
     "title": "The Wet Codebase",
-    "url":"https://www.youtube.com/embed/17KCHwOwgms",
-    "thumbnail":"https://i.ytimg.com/vi/17KCHwOwgms/maxresdefault.jpg",
-    "comments":  [
+    "url": "https://www.youtube.com/embed/17KCHwOwgms",
+    "thumbnail": "https://i.ytimg.com/vi/17KCHwOwgms/maxresdefault.jpg",
+    "comments": [
       {
-        "id":1,
-        "text":"축축한 영상이네요!"
+        "id": 1,
+        "text": "축축한 영상이네요!"
       }
     ]
-  }, 
+  },
   {
     "id": 4,
     "type": "youtube",
     "title": "Redux 쉬운 설명",
-    "url":"https://www.youtube.com/embed/QZcYz2NrDIs",
-    "thumbnail":"https://i.ytimg.com/vi/QZcYz2NrDIs/maxresdefault.jpg",
-    "comments":  [
-    ]
+    "url": "https://www.youtube.com/embed/QZcYz2NrDIs",
+    "thumbnail": "https://i.ytimg.com/vi/QZcYz2NrDIs/maxresdefault.jpg",
+    "comments": []
   }
 ]
