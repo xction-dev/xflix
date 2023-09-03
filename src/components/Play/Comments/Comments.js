@@ -20,7 +20,7 @@ export default function Comments(props) {
           placeholder="댓글을 작성하세요"
           value={newComment}
           onChange={(e) => {
-            setComment(e.target.value);
+            setNewComment(e.target.value);
           }}
         ></input>
       </div>
@@ -35,7 +35,7 @@ export default function Comments(props) {
         placeholder="댓글을 작성하세요"
         value={newComment}
         onChange={(e) => {
-          setComment(e.target.value);
+          setNewComment(e.target.value);
         }}
       ></input>
       {comments.map((a, index) => {

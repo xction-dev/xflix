@@ -5,7 +5,7 @@ import contentsData from "src/mock/contents.json";
 
 export default function PlayContainer(props) {
   var id = props.id;
-  let content = contentsData[id];
+  const content = contentsData[id];
 
   if (content.type != "youtube") {
     return <div>잘못된 접근입니다</div>;
