@@ -2,8 +2,9 @@ import contentsData from "src/mock/contents.json";
 import "./Player.css";
 
 export default function Player(props) {
-  var playerId = props.playerId;
-  var video = contentsData[playerId];
+  var video = props.content;
+  // var playerId = props.playerId;
+  // var video = contentsData[playerId];
 
   return (
     <div className="video-container">

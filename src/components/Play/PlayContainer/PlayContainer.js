@@ -5,16 +5,16 @@ import contentsData from "src/mock/contents.json";
 
 export default function PlayContainer(props) {
   var id = props.id;
-  const content = contentsData[id];
+  const contentToPlay = contentsData[id];
 
-  if (content.type != "youtube") {
+  if (contentToPlay.type != "youtube") {
     return <div>잘못된 접근입니다</div>;
   }
 
   return (
     <div className="play-container">
-      <Player playerId={id} className="player-component" />
-      <Comments commentsId={id} className="comments-component" />
+      <Player content={contentToPlay} className="player-component" />
+      <Comments content={contentToPlay} className="comments-component" />
     </div>
   );
 }

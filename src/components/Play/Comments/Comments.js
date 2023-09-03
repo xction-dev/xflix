@@ -5,9 +5,9 @@ import { useState } from "react";
 import "./Comments.css";
 
 export default function Comments(props) {
-  // var commentsId = props.commentsId;
-  var content = contentsData[props.commentsId];
-  var comments = content.comments;
+  var comments = props.content.comments;
+  // var content = contentsData[props.commentsId];
+  // var comments = content.comments;
 
   var [newComment, setNewComment] = useState("");
 
