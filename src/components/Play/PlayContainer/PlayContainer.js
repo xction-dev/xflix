@@ -3,6 +3,7 @@
 import Player from "src/components/Play/Player/Player.js";
 import Comments from "src/components/Play/Comments/Comments.js";
 import "./PlayContainer.css";
+import { useState, useEffect } from "react";
 import contentsData from "src/mock/contents.json";
 
 export default function PlayContainer(props) {
