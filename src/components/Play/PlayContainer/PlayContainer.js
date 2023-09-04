@@ -1,3 +1,5 @@
+"use client";
+
 import Player from "src/components/Play/Player/Player.js";
 import Comments from "src/components/Play/Comments/Comments.js";
 import "./PlayContainer.css";
