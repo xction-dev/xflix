@@ -46,7 +46,7 @@
   };
   ```
 
-**GET** `/api/content/:content_id`
+**GET** `/api/contents/:content_id`
 
 - response
   ```JSON

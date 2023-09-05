@@ -1,11 +1,11 @@
 import PlayContainer from "src/components/Play/PlayContainer/PlayContainer.js";
 
 export default function Play(props) {
-  var contentId = props.params.contents_id;
+  const contentNumber = props.params.content_id;
 
   return (
     <div>
-      <PlayContainer id={contentId} />
+      <PlayContainer contentId={contentNumber} />
     </div>
   );
 }

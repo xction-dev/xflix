@@ -1,9 +1,9 @@
-import contentsData from "src/mock/contents.json";
 import "./Player.css";
 
 export default function Player(props) {
-  var playerId = props.playerId;
-  var video = contentsData[playerId];
+  var video = props.content;
+  // var playerId = props.playerId;
+  // var video = contentsData[playerId];
 
   return (
     <div className="video-container">
@@ -17,7 +17,7 @@ export default function Player(props) {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       ></iframe>
-      <h2>{video.title}</h2>
+      <h2>{props.content.title}</h2>
     </div>
   );
 }
