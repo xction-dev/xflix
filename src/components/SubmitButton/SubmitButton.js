@@ -1,8 +1,12 @@
 import "./SubmitButton.css";
 
-export default function SubmitButton({ status }) {
+export default function SubmitButton({ onClick, status }) {
+  const handleRegister = () => {
+    onClick();
+  };
+
   return (
-    <button className="submit-btn">
+    <button onClick={handleRegister} className="submit-btn">
       {status === "submit" ? "확인" : "가입"}
     </button>
   );
