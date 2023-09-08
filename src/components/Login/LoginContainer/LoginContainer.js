@@ -54,7 +54,7 @@ export default function LoginContainer() {
         inputValue={PWInputValue}
         setInputValue={setPWInputValue}
       />
-      <SubmitButton status="submit" />
+      <SubmitButton onClick={handleLogin} status="login" />
     </div>
   );
 }
