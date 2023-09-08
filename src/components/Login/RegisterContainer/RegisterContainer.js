@@ -6,7 +6,7 @@ import NameInput from "../NameInput/NameInput";
 import SubmitButton from "../../SubmitButton/SubmitButton";
 import "./RegisterContainer.css";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function RegisterContainer() {
