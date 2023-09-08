@@ -25,9 +25,6 @@ export default function RegisterContainer() {
     try {
       const response = await fetch(apiUrl, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
         body: JSON.stringify({
           name: nameValue,
           username: IDRegisterValue,
