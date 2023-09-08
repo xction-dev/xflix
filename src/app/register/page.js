@@ -4,7 +4,7 @@ import RegisterContainer from "@/components/Login/RegisterContainer/RegisterCont
 export default function Register() {
   return (
     <>
-      <Header />
+      <Header status="register" />
       <RegisterContainer />
     </>
   );

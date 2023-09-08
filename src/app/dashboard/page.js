@@ -4,7 +4,7 @@ import DashboardContainer from "@/components/Curations/DashboardContainer/Dashbo
 export default function Dashboard() {
   return (
     <>
-      <Header />
+      <Header status="dashboard" />
       <DashboardContainer />
     </>
   );
