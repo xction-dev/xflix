@@ -19,7 +19,6 @@ export default function RegisterContainer() {
   const router = useRouter();
 
   const handleRegister = async () => {
-    console.log("hi");
     const apiUrl = "/api/users/register"; // 서버 API 엔드포인트 URL
 
     try {
