@@ -55,6 +55,7 @@ export default function LoginContainer() {
         setInputValue={setPWInputValue}
       />
       <SubmitButton onClick={handleLogin} status="login" />
+      {errorMessage && <p>오류: {errorMessage}</p>}
     </div>
   );
 }
