@@ -1,10 +1,21 @@
 import "./SubmitButton.css";
-import Link from "next/link";
 
-export default function SubmitButton() {
+export default function SubmitButton({ onClick, status }) {
+  const handleRegister = () => {
+    onClick();
+  };
+
+  const handleLogin = () => {
+    onClick();
+  };
+
   return (
-    <Link href="/dashboard" className="submit-btn">
-      확인
-    </Link>
+    // status를 login과 register로 나눠 onClick 기능과 버튼 레이블을 조건부 렌더링
+    <button
+      onClick={status === "login" ? handleLogin : handleRegister}
+      className="submit-btn"
+    >
+      {status === "login" ? "확인" : "가입"}
+    </button>
   );
 }

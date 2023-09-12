@@ -4,7 +4,7 @@ import LoginContainer from "@/components/Login/LoginContainer/LoginContainer";
 export default function Login() {
   return (
     <>
-      <Header />
+      <Header status="login" />
       <LoginContainer />
     </>
   );

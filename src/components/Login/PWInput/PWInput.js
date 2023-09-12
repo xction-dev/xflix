@@ -1,9 +1,11 @@
 import "./PWInput.css";
 
-export default function PWInput({ inputValue, setInputValue }) {
+export default function PWInput({ status, inputValue, setInputValue }) {
   return (
     <div>
-      <h5 className="pw-txt">비밀번호</h5>
+      <h5 className="pw-txt">
+        {status === "original" ? "비밀번호" : "비밀번호 확인"}
+      </h5>
       <input
         className="pw-input"
         type="password"

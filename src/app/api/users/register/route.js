@@ -62,7 +62,7 @@ export async function POST(request) {
   /**
    * user 추가
    */
-  if (insertResult.insertedCount !== 1) {
+  if (!insertResult.insertedId) {
     return NextResponse.json(
       {
         code: 11,
